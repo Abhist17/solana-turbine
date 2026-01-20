@@ -2,3 +2,54 @@
 node_modules
 target
 .DS_Store
+# Wallet files - NEVER commit these!
+**/*wallet*.json
+**/wallet/
+*.key
+
+# But keep package.json and tsconfig.json
+!package.json
+!package-lock.json
+!tsconfig.json
+
+# Environment files
+.env
+.env.local
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Wallet files - NEVER commit these!
+**/*wallet*.json
+**/wallet/
+*.key
+
+# But keep package.json and tsconfig.json
+!package.json
+!package-lock.json
+!tsconfig.json
+
+# Environment files
+.env
+.env.local
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE files
+.vscode/
+.idea/
