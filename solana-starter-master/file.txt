@@ -1,0 +1,5 @@
+solana pub gen key 
+HZhhJ6bUz3aRu4nc4ufy2GQw61nNCNLbMKfFi2duQhkn
+
+mind add key
+E2Xj89XKJDcQ8wswgNenJVDbkJ5oG4kUErvhTMvzYVFY

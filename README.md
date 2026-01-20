@@ -1,1 +1,1 @@
-# solana-turbine
+Solana Week 1 POW 
