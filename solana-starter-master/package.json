@@ -12,7 +12,7 @@
     "transfer": "ts-node ./prereq/transfer.ts",
     "enroll": "ts-node ./prereq/enroll.ts",
     "spl_init": "ts-node ./cluster1/spl_init.ts",
-    "spl_mint": "node --loader ts-node/esm ts/cluster1/spl_mint.ts",
+    "spl_mint": "tsx ts/cluster1/spl_mint.ts",
     "spl_transfer": "ts-node ./cluster1/spl_transfer.ts",
     "spl_metadata": "ts-node ./cluster1/spl_metadata.ts",
     "nft_image": "ts-node ./cluster1/nft_image.ts",
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }

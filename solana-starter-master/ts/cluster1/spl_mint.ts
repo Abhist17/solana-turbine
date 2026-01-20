@@ -10,7 +10,7 @@ import {
   mintTo,
 } from "@solana/spl-token";
 
-import wallet from "../wallet/turbin3-wallet.json";
+import wallet from "./wallet/turbin3-wallet.json";
 
 
 const keypair = Keypair.fromSecretKey(
