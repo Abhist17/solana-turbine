@@ -1,6 +1,6 @@
 import { Commitment, Connection, Keypair, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js"
 import wallet from "./wallet/turbin3-wallet.json"
-import { getOrCreateAssociatedTokenAccount, transfer } from "@solana/spl-token";
+import { getOrCreateAssociatedTokenAccount, getAccount } from "@solana/spl-token";
 
 // We're going to import our keypair from the wallet file
 const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
@@ -18,7 +18,8 @@ const to = new PublicKey("Axwpu59SVXD15YHD4S8oBEn65uCSrtkbSR5QDaeYAmEH");
 (async () => {
     try {
         
-        const fromTokenAccount = await getOrCreateAssociatedTokenAccount(
+        
+        const yourTokenAccount = await getOrCreateAssociatedTokenAccount(
             connection,
             keypair,
             mint,
@@ -26,22 +27,26 @@ const to = new PublicKey("Axwpu59SVXD15YHD4S8oBEn65uCSrtkbSR5QDaeYAmEH");
         );
 
         
-        const toTokenAccount = await getOrCreateAssociatedTokenAccount(
+        const friendTokenAccount = await getOrCreateAssociatedTokenAccount(
             connection,
             keypair,
             mint,
             to
         );
 
-        const tx = await transfer(connection,
-            keypair,
-            fromTokenAccount.address,
-            toTokenAccount.address,
-            keypair,
-            50 * Math.pow(10, 9),
+        // Fetch balances
+        const yourAccount = await getAccount(connection, yourTokenAccount.address);
+        const friendAccount = await getAccount(connection, friendTokenAccount.address);
 
-        );
-        console.log(tx);
+        const yourBalance = Number(yourAccount.amount) / Math.pow(10, 9);
+        const friendBalance = Number(friendAccount.amount) / Math.pow(10, 9);
+
+        console.log(" TOKEN BALANCES ");
+        console.log(`Your balance: ${yourBalance} tokens`);
+        console.log(`friend's balance: ${friendBalance} tokens`);
+        console.log("");
+        console.log(`Your token account: ${yourTokenAccount.address.toString()}`);
+        console.log(`Friend's token account: ${friendTokenAccount.address.toString()}`);
 
         
     } catch(e) {
