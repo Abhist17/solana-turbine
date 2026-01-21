@@ -1,4 +1,4 @@
-import wallet from "../wallet/turbin3-wallet.json";
+import wallet from "./wallet/turbin3-wallet.json";
 
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import {
@@ -13,7 +13,7 @@ import {
 
 const RPC_ENDPOINT = "https://api.devnet.solana.com";
 
-const mint = publicKey("E2Xj89XKJDcQ8wswgNenJVDbkJ5oG4kUErvhTMvzYVFY");
+const mint = publicKey("t7xSQLQV7yMmYASZ4TZDjgspAuDkeLdt3MFejQDtDvC");
 
 const umi = createUmi(RPC_ENDPOINT).use(mplTokenMetadata());
 
