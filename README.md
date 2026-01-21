@@ -257,3 +257,9 @@ MIT License
 - Turbin3 team for the educational program
 - Solana Foundation for the blockchain infrastructure
 - Metaplex for NFT standards and tools
+
+## Token #3 (New Token with Metadata)
+- **Mint Address:** `t7xSQLQV7yMmYASZ4TZDjgspAuDkeLdt3MFejQDtDvC`
+- **Name:** My Token
+- **Symbol:** MTK
+- [View on Explorer](https://explorer.solana.com/address/t7xSQLQV7yMmYASZ4TZDjgspAuDkeLdt3MFejQDtDvC?cluster=devnet)

@@ -24,13 +24,13 @@ const connection = new Connection(
 );
 
 
-const tokenAmount = 1_000_000;
+const tokenAmount = 100 * Math.pow(10, 9);  // 100 tokens with 9 decimals
 
 
 
 
 const mint = new PublicKey(
-  "94rHScrZXHH3rM14MjuvE4tkuxSMsKS21PDBHd8YqWSx"
+  "t7xSQLQV7yMmYASZ4TZDjgspAuDkeLdt3MFejQDtDvC"
 );
 
 
