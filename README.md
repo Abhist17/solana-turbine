@@ -1,6 +1,7 @@
 # Solana Turbine Week 1
 
 A comprehensive TypeScript project for creating and managing SPL tokens on the Solana blockchain (Devnet). Built as part of the Turbin3 learning program.
+For the proofs refer to the Notion Link I have shared while I have also shared a docs folder for every proof regarding every contracts result.
 
 ## Features
 
