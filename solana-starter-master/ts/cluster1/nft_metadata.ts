@@ -19,7 +19,7 @@ umi.use(signerIdentity(signer));
   try {
     // Follow this JSON structure
      const image =
-      "https://gateway.irys.xyz/3LRRCDnBx8uCfwCxwYUnVusGacu9wP";
+      "https://gateway.irys.xyz/Eu3JieKYopSynuyWu5zztgGDRLaPzNpNePynjxfpbr5o";
     const metadata = {
       name: "abhi-rug",
       symbol: "Rug",
